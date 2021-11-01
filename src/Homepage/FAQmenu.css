@@ -1,0 +1,66 @@
+.faqmenu-container {
+    margin: 70px 100px 70px 100px;
+}
+
+.faqmenu-div {
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.faqmenu-div-next {
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 10px;
+}
+.faqmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    
+}
+
+.faqmenu h3 {
+    color: var(--BrandGrey);
+}
+
+.faqmenu:hover {
+    background-color: rgba(209, 209, 209, 0.507);
+}
+
+.faqmenu i {
+    color: var(--BrandGreen);
+    transition: 0.5s all ease-in-out;
+}
+
+.faqmenu-answer {
+    overflow: hidden;
+    position: relative;
+}
+
+.faqmenu-answer .fanswer {
+    padding: 20px 10px;
+    margin-top: -100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.faqmenu-answer .faqshow {
+    padding: 20px 10px;
+    margin-top: 0;
+    transition: 0.5s all ease-in-out;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .faqmenu-container {
+        margin: 70px 25px 70px 25px;
+    }
+ 
+
+}

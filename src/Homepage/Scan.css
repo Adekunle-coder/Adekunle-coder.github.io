@@ -1,0 +1,138 @@
+.scan-container {
+  background-color: var(--BrandGreen);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scan-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.inner-scan-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.inner-scan-div .inner-header {
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 4rem;
+    letter-spacing: 0.1px;
+    line-height: 3.4rem;
+}
+
+.qr-stores-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 70%;
+}
+
+.qr-image-div {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.qr-image-div img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.qr-image-div p {
+    color: white;
+}
+
+.google-play, .apple-store {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.google-play:hover, .apple-store:hover {
+    background-color: rgba(185, 184, 184, 0.89);
+}
+
+
+.google-play svg, .apple-store svg {
+    fill: white;
+    width: 30px;
+    height: 30px;
+}
+
+.google-text, .apple-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.google-text .boldMe, .apple-text .boldMe {
+    font-weight: 700;
+}
+
+.brand-showcase-div {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.brand-showcase-div img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Mobile responsiveness */
+
+
+@media only screen and (max-width: 768px) {
+
+    .inner-scan-div .inner-header {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        width: 100%;
+        padding: 0 25px;
+        font-weight: 800;
+    }
+
+    .qr-stores-div {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    .qr-image-div {
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    .qr-image-div img {
+        width: 60%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    .qr-stores-div {
+        width: 100%;
+        padding: 0 25px;
+    }
+    .qr-image-div {
+        text-align: center;
+    }
+} 

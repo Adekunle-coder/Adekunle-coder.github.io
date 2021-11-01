@@ -1,0 +1,86 @@
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.493);
+    height: 100%;
+    z-index: 998;
+    /* overflow-y: scroll; */
+}
+
+.modal {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 500px;
+    text-align: center;
+    padding: 20px 60px;
+    position: relative;
+    top: 5%;
+}
+
+.modal h4 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: var(--BrandGrey);
+}
+
+.modal h4::after {
+    display: block;
+    content: "";
+    width: 40px;
+    border: 1px solid var(--BrandGreen);
+    margin: 10px auto;
+    margin-bottom: 10px;
+}
+
+
+.modal h2 {
+    color: var(--BrandGreen);
+    margin-bottom: 10px;
+}
+
+.modal p {
+    margin: 20px 0;
+}
+
+.modal span {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.modal button {
+    border: none;
+    color: white;
+    padding: 20px 30px;
+    background-color: var(--BrandGreen);
+    margin-top: 40px;
+    cursor: pointer;
+
+}
+
+.exit-modal {
+    position: absolute;
+    right: 4%;
+    top: 4%;
+    border: 2px solid rgb(140, 253, 140);
+    cursor: pointer;
+    padding: 20px;
+}
+
+.exit-modal:hover {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    .modal {
+        height: 400px;
+    }
+}

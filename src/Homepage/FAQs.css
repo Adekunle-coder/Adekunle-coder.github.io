@@ -1,0 +1,151 @@
+.faqs-head {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin: 70px 100px 70px 100px;
+    
+}
+
+.faqs-head h3::before {
+    display: block;
+    content: "";
+    border: 1px solid var(--BrandGrey);
+    width: 35px;
+    margin-bottom: 10px;
+}
+
+.faqs-head h3 {
+    font-size: 1.5rem;
+    color: var(--BrandGrey);
+}
+
+.faqs-head button {
+    border: 2px solid var(--BrandGrey);
+    background-color: inherit;
+    padding: 15px 25px;
+    color: var(--BrandGrey);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.faqs-head button:hover {
+    background-color: var(--BrandGrey);
+    color: white;
+}
+
+.faq-showcase-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px 100px 40px 100px;
+    gap: 15px;
+}
+
+.faq-card {
+    background-color: var(--BrandGrey);
+    color: white;
+    padding: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid var(--BrandGrey);
+    transition: all 0.5s ease-in-out;
+}
+
+.faq-card svg {
+    fill: white;
+    width: 30px;
+    margin-bottom: 5rem;
+}
+
+.faq-card:hover svg {
+    fill: white;
+}
+
+.faq-card:hover {
+    background-color: var(--BrandGreen);
+}
+
+.faq-card:hover h3, .faq-card:hover p {
+    color: white;
+}
+
+.faq-card:hover .wcard-content h3::after {
+    border: 1px solid white;
+}
+
+.fcard-content h3 {
+    font-size: 1.5rem;
+}
+
+.faq-card .fcard-content h3::after {
+    display: block;
+    content: "";
+    border: 1px solid white;
+    width: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.faq-card-active .fcard-content h3::after {
+    display: block;
+    content: "";
+    border: 1px solid white;
+    width: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.faq-card-active {
+    background-color: var(--BrandGreen);
+    color: white; 
+    padding: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid var(--BrandGrey);
+    transition: all 0.5s ease-in-out;
+}
+
+.faq-card-active svg {
+    fill: white;
+    width: 30px;
+    margin-bottom: 5rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .faqH-container {
+        position: relative;
+        padding-bottom: 20px;
+    }
+
+    .faq-showcase-container {
+        overflow-x: scroll;
+        margin: 20px 25px 40px 25px;
+    }
+
+    .faqs-head {
+        margin-top: 40px;
+        margin: 70px 25px 70px 25px;
+     
+    }
+
+    .faqs-head .fttb {
+        position: absolute;
+        bottom: 0;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .faq-showcase-container {
+        overflow-x: scroll;
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+    .faq-showcase-container {
+        overflow-x: scroll;
+    }
+}

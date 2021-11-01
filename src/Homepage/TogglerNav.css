@@ -1,0 +1,142 @@
+.toggler-nav {
+  width: 100%;
+  background-color: var(--BrandGreen);
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 12%;
+  left: 0;
+  overflow: hidden;
+  height: 100vh;
+  z-index: 999;
+  padding: 100px;
+}
+
+.toggler-nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  color: white;
+}
+
+.toggler-nav-menu i {
+  display: none;
+}
+
+.toggler-fade {
+  color: rgba(165, 165, 165, 0.849);
+}
+
+.show {
+  display: none;
+}
+
+.dropcontainer ul {
+  list-style: none;
+  transition: 0.5s all ease-in-out;
+}
+
+.dropcontainer ul li {
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-bottom: 10px;
+}
+
+.dropcontainer ul li:hover,
+.toggler-nav-menu h3:hover {
+  color: rgb(170, 170, 170);
+}
+
+.toggler-nav-menu h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.toggler-nav-menu h3::before {
+  display: block;
+  width: 40px;
+  margin-bottom: 15px;
+  content: "";
+  border-bottom: 2px solid white;
+}
+
+.toggler-heading i {
+  display: none;
+}
+
+/* Mobile Responsiveness */
+
+@media only screen and (max-width: 736px) {
+  .toggler-nav {
+    display: block;
+    height: 100vh;
+    padding: 80px 0px 0 0px;
+  }
+
+  .toggler-nav-menu i {
+    display: block;
+  }
+  .toggler-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    margin-bottom: 15px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .toggler-heading-border {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    margin-bottom: 10px;
+    border: 1px dotted grey;
+    cursor: pointer;
+  }
+
+  .toggler-heading i {
+    display: block;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .toggler-nav-menu h3 {
+    font-size: 1rem;
+  }
+  .toggler-nav-menu h3::before {
+    display: none;
+  }
+
+  .dropcontainer {
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+    position: relative;
+ 
+  }
+
+  .dropcontainer ul {
+    background-color: white;
+    width: 100%;
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    color: var(--BrandGrey);
+    margin-top: -100%;
+  
+  }
+
+  .dropcontainer .drop-display {
+    margin-top: 0;
+  }
+
+  .dropcontainer ul li {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .show {
+    display: block;
+  }
+}

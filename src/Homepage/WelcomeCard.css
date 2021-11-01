@@ -1,0 +1,94 @@
+.welcome-space {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 70px 100px 70px 100px;
+    gap: 20px;
+}
+
+.welcome-card {
+    background-color: white;
+    color: var(--BrandGrey);
+    padding: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid var(--BrandGrey);
+    transition: all 0.5s ease-in-out;
+}
+
+.welcome-card-active {
+    background-color: var(--BrandGreen);
+    color: white; 
+    padding: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid var(--BrandGrey);
+    transition: all 0.5s ease-in-out;
+}
+
+.welcome-card-active svg {
+    fill: white;
+    width: 30px;
+    margin-bottom: 5rem;
+}
+
+.welcome-card svg {
+    fill: var(--BrandGrey);
+    width: 30px;
+    margin-bottom: 5rem;
+}
+
+.welcome-card:hover svg {
+    fill: white;
+}
+
+.welcome-card:hover {
+    background-color: var(--BrandGreen);
+}
+
+.welcome-card:hover h3, .welcome-card:hover p {
+    color: white;
+}
+
+.welcome-card:hover .wcard-content h3::after {
+    border: 1px solid white;
+}
+
+.wcard-content h3 {
+    font-size: 1.5rem;
+}
+
+.welcome-card .wcard-content h3::after {
+    display: block;
+    content: "";
+    border: 1px solid var(--BrandGrey);
+    width: 35px;
+    margin-bottom: 10px;
+}
+
+.welcome-card-active .wcard-content h3::after {
+    display: block;
+    content: "";
+    border: 1px solid white;
+    width: 35px;
+    margin-bottom: 10px;
+}
+
+
+/* Mobile Responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .welcome-space {
+        grid-template-columns: 1fr;
+        margin: 70px 25px 50px 25px;
+    
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    .welcome-space {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 70px 25px 50px 25px;
+    
+    }
+} 

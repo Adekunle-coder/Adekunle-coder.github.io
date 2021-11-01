@@ -1,0 +1,86 @@
+.optin-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+
+.optin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.optin-heading {
+    width: 60%;
+    color: var(--BrandGreen);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+
+.optin-heading h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    margin-bottom: 50px;
+    }
+
+.optin-btns {
+    display: flex;
+    align-items: center;
+}
+
+.cmmt-join {
+    background-color: var(--BrandGreen);
+    color: white;
+    padding: 20px 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.cmt-learn {
+    background-color: inherit;
+    color: var(--BrandGreen);
+    border: 1px solid var(--BrandGrey);
+    padding: 20px 35px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.cmt-learn:hover {
+    background-color: var(--BrandGreen);
+    color: white;
+}
+
+
+/* Mobile Responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .optin {
+        padding-bottom: 50px;
+    }
+  
+    .optin-heading {
+        font-size: 1.2rem;
+    }
+    .cmt-learn, .cmmt-join {
+        padding: 15px 25px;
+    }
+
+}

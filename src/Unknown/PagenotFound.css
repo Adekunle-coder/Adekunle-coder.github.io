@@ -1,0 +1,31 @@
+.error-page-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.error-page-div h1 {
+    font-size: 4rem;
+    color: var(--BrandGrey);
+    margin-bottom: 20px;
+}
+
+.error-page-div button {
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--BrandGreen);
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media only screen  and (max-width: 736px){
+    
+.error-page-div h1 {
+    font-size: 3rem;
+}
+}

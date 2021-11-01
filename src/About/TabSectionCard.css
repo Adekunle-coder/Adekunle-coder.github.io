@@ -1,0 +1,55 @@
+.tsc-card {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+
+.tsc-img-div {
+    height: 100px;
+    width: 150px;
+} 
+
+.tsc-img-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tsc-content {
+    margin-left: 5px;
+    border: 1px solid var(--BrandGrey);
+    height: 100px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.tsc-content:hover {
+    background-color: var(--BrandGrey);
+}
+
+.tsc-content:hover h3 {
+    color: white;
+}
+
+.tsc-content h3 {
+    font-size: 1.5rem;
+    color: var(--BrandGrey);
+}
+
+
+@media screen and (max-width: 768px) {
+    .tsc-content {
+        width: 100%;
+    }
+
+    .tsc-content h3 {
+        font-size: 1.2rem;
+     
+    }
+}

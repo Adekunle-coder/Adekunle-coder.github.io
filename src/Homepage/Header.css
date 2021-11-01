@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  min-height: 100px;
+  margin: 0 100px; 
+}
+
+
+.logo svg {
+ width: 150px;
+ height: 90px;
+ color: var(--BrandGreen);
+ cursor: pointer;
+}
+
+.righty {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  margin-right: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  
+}
+
+.nav ul li {
+  margin-left: 35px;
+  cursor: pointer;
+  padding: 0;
+ 
+  
+}
+
+.nav ul li::after {
+  display: block;
+  content: "";
+  border-bottom: 2px solid var(--BrandGreen);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.nav ul li:hover:after {
+  transform: scaleX(1);
+}
+
+.navvy-close {
+  display: none;
+}
+
+.active {
+  display: flex;
+  border-bottom: 2px solid var(--BrandGreen);
+}
+
+.active:hover:after {
+  display: none;
+}
+
+.nav ul li:hover {
+  color: var(--BrandGreen);
+}
+
+.nav button {
+  background-color: var(--BrandGreen);
+  padding: 25px 25px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.icons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: -50px 0;
+  min-height: 100px;
+}
+.icons i {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.icons .fa-search {
+  padding: 80px 10px;
+}
+.icons .fa-search:hover {
+  background-color: rgba(128, 128, 128, 0.521);
+}
+
+.icons .toggler {
+  background-color: var(--BrandGrey);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: white;
+  cursor: pointer;
+  min-height: 100px;
+  width: 100px;
+  transition: 0.1s all ease-in-out;
+  
+}
+
+.icons .toggler:hover {
+  background-color: var(--BrandGreen);
+}
+
+.icons .toggler:hover i {
+  transform: rotate(90deg);
+}
+
+.icons .toggler i {
+    font-size: 2.3rem;
+    transition: 0.1s all ease-in-out;
+}
+
+/* Responsiveness for header */
+/* box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.15); */
+
+@media (max-width: 736px) {
+
+ 
+  .header {
+    display: flex;
+    margin: 0;
+    
+  }
+
+  .logo {
+      margin-left: 15px;
+  }
+ 
+  .nav {
+    display: none;
+  }
+  
+}
+
+@media only screen and (min-width: 737px) and (max-width: 1200px) {
+    .header {
+        display: flex;
+        margin: 15px;
+      }
+    
+    .navvy {
+        display: none;
+      }
+
+      .nav button {
+          display: block;
+      }
+}

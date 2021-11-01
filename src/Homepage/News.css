@@ -1,0 +1,152 @@
+
+/* .news-minic {
+    margin: 70px 100px 70px 100px;
+} */
+
+.news-head {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin: 70px 100px 70px 100px;
+    
+}
+
+.news-head h3::before {
+    display: block;
+    content: "";
+    border: 1px solid var(--BrandGrey);
+    width: 35px;
+    margin-bottom: 10px;
+}
+
+.news-head h3 {
+    font-size: 1.5rem;
+    color: var(--BrandGrey);
+}
+
+.news-head button {
+    border: 2px solid var(--BrandGrey);
+    background-color: inherit;
+    padding: 15px 25px;
+    color: var(--BrandGrey);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.news-head button:hover {
+    background-color: var(--BrandGrey);
+    color: white;
+}
+
+
+.news-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.news-div {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    height: 400px;
+}
+
+.opac {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.384);
+}
+
+.news-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.news-div:hover img {
+    transform: scale(1.04);
+    
+}
+
+.news-div .news-div-ct {
+    position: absolute;
+    color: white;
+    bottom: 5%;
+    left: 0;
+    padding: 0 50px;
+    width: 100%;
+    z-index: 999;
+}
+
+.news-div .news-div-ct h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.news-div .news-div-ct hr {
+    margin-bottom: 15px;
+}
+
+/* .news-div .news-div-ct hr {
+    border: 1px solid white;
+} */
+
+
+.news-div .news-div-ct p, 
+.news-div .news-div-ct h4 {
+    margin-bottom: 10px;
+}
+
+.news-div .news-div-ct hr {
+    width: 100%;
+}
+
+.news-exit {
+    display: flex;
+}
+
+.news-exit i {
+    margin-right: 10px;
+    transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .news-section {
+        grid-template-columns: 1fr;
+        padding-bottom: 50px;
+       
+    }
+
+    .news-minic {
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+    .news-head {
+        margin: 70px 25px 70px 25px;
+    
+    }
+
+    
+    .news-head .ntb {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0 25px;
+        
+    }
+
+    .news-div .news-div-ct  {
+        padding: 0 25px;
+    }
+
+}
