@@ -35,6 +35,7 @@ export const ProductProvider = (props) => {
     setCustomers(false);
     setEWallet(false);
     setNews(false);
+    setToggler(false);
   }
 
   function Walletclick() {
@@ -43,6 +44,7 @@ export const ProductProvider = (props) => {
     setHome(false);
     setNews(false);
     setCustomers(false);
+    setToggler(false);
   }
   function Customersclick() {
     setCustomers(true);
@@ -50,6 +52,7 @@ export const ProductProvider = (props) => {
     setAboutPage(false);
     setHome(false);
     setNews(false);
+    setToggler(false);
   }
   function Newsclick() {
     setNews(true);
@@ -57,6 +60,7 @@ export const ProductProvider = (props) => {
     setEWallet(false);
     setAboutPage(false);
     setHome(false);
+    setToggler(false);
   }
   function NotaMenuclick() {
     setNews(false);
